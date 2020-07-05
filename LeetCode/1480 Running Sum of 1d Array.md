@@ -1,0 +1,49 @@
+### 1480 Running Sum of 1d Array
+
+Easy
+
+https://leetcode.com/problems/running-sum-of-1d-array/
+
+Given an array `nums`. We define a running sum of an array as `runningSum[i] = sum(nums[0]…nums[i])`.
+
+Return the running sum of `nums`.
+
+#### My Solution
+
+Just add each number directly.
+
+```java
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int[] runningSum = new int[nums.length];
+        for(int i=0;i<nums.length;i++){
+            int sum = 0;
+            for(int j=0;j<=i;j++){
+                sum = sum + nums[j];
+            }
+            runningSum[i] = sum;
+        }
+        return runningSum;
+    }
+}
+```
+
+#### Other Solutions
+
+He use the new `nums[i]` to replace the origin `nums[i]` ,because the problem let me to add the each one, for distance,  the new `nums[4]` can be thought as the new `nums[3]` add to the origin `nums[4]`. It only use one circulation.
+
+```java
+//@iamrohit-j
+class Solution {
+    public int[] runningSum(int[] nums) {
+        for(int i = 1; i < nums.length; i++){
+            nums[i] += nums[i-1];
+        }
+        return nums;
+    }
+}
+```
+
+#### Other points
+
+DP(1)
