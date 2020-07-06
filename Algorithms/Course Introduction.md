@@ -1,2 +1,2 @@
-### Course Introduction
+# Course Introduction
 

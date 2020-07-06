@@ -1,2 +1,2 @@
 # Preparation2020
-Notes about intern preparation
+Notes about intern preparation.
