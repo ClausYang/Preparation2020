@@ -73,5 +73,35 @@ To merge components containing `p` and `q`, change all entries whose id equals `
 
 <img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.32.58.png" alt="截屏2020-07-16 下午11.32.58" style="zoom:50%;" />
 
-**Java Implementation**
+**Java Implementation.**
 
+```java
+public class QuickFindUF{
+  private int[] id;
+  
+  public QickFindUF(int N){
+    id = new int[N];
+    for(int i=0; i<N;i++){
+      id[i] = i;
+    }
+  }
+  public boolean connected(int p, int q){
+    return id[p]==id[q];
+  }
+  public void union(int p, int q){
+    int pid = id[p];
+    int qid = id[q];
+    for(int i=0; i<id.length;i++){
+      if(id[i] == pid) id[i]=qid;
+    }
+  }
+}
+```
+
+**Cost model.**
+
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-17 下午8.48.36.png" alt="截屏2020-07-17 下午8.48.36" style="zoom:50%;" />
+
+**Union is too expensive.**
+
+It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$ objects.
