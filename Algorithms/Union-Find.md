@@ -105,3 +105,59 @@ public class QuickFindUF{
 **Union is too expensive.**
 
 It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$ objects.
+
+### 1.4 Quick Union
+
+**Data Structure**.![截屏2020-07-19 下午8.39.51](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.39.51.png)
+
+**Find.** 
+
+Check if `p` and `q` have the same **root**.
+
+**Union. **
+
+To merge components containing `p` and `q`, set the `id` of `p`'s root to the id of `q`'s root.
+
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.41.18.png" alt="截屏2020-07-19 下午8.41.18" style="zoom:50%;" />
+
+**Java Implementation.**
+
+```java
+public class QuickUnionUF{
+  private int[] id;
+  
+  public QuickUnionUF(int N){
+    id = new int[N];
+    for(int i=0;i<N;i++) id[i] = i;
+  }
+  
+  private int root(int i){
+    while(id[i] != i) i = id[i];
+    return i;
+  }
+  
+  public boolean connected(int p, int q){
+    return root(p) == root(q);
+  }
+  
+  public void union( int p, int q){
+    int i = root(p);
+    int j = root(q);
+    id[i] = j;
+  }
+}
+```
+
+**Cost model.**
+
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.46.00.png" alt="截屏2020-07-19 下午8.46.00" style="zoom:50%;" />
+
+**Quick-find defect.**
+
+- Union too expensive (*N* array accesses).
+- Trees are flat, but too expensive to keep them flat.
+
+**Quick-union defect.**
+
+- Trees can get tall.
+- Find too expensive (could be *N* array accesses).
