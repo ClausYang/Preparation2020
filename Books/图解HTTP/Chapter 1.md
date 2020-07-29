@@ -1,6 +1,6 @@
-# 图解HTTP
 
-## Chapter 1 了解Web及网络基础
+
+# Chapter 1 了解Web及网络基础
 
 - TCP/IP族一般表示与**互联网相关联的集合总称**
 
@@ -53,3 +53,11 @@
   - URI：统一资源标识符，用字符串标识某一互联网资源
   - URL：统一资源定位符：表示资源的地点
   - URL是URI的子集
+  - `http://user:pass@www.example.jp:80/dir/index.html?uid=1#ch1`
+    - 协议方案名：`http:`制定协议类型
+    - 登录信息（认证）：`user:pass`用户名和密码
+    - 服务器地址：`www.example.jp`DNS可解析名称/IPv4/IPv6
+    - 服务器端口号：`80`
+    - 带层次的文件路径：`dir/index.html`
+    - 查询字符串：`uid=1`
+    - 片段标识符：`ch1`
