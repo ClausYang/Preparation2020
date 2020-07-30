@@ -38,6 +38,6 @@ double f(int n, double a[], double x){
 
 分而治之：$nlogn$
 
-<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-07 下午11.03.24.png" alt="截屏2020-07-07 下午11.03.24" style="zoom:50%;" />
+<img src="Chapter 1.assets/截屏2020-07-07 下午11.03.24.png" alt="截屏2020-07-07 下午11.03.24" style="zoom:50%;" />
 
 - **在线处理算法**：抛弃负的子列和

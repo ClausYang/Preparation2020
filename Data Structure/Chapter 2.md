@@ -4,15 +4,15 @@
 
 ### 方法1：顺序存储结构直接表示
 
-<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-20 下午8.09.08.png" alt="截屏2020-07-20 下午8.09.08" style="zoom:50%;" />
+<img src="Chapter 2.assets/截屏2020-07-20 下午8.09.08.png" alt="截屏2020-07-20 下午8.09.08" style="zoom:50%;" />
 
 ### 方法2：顺序存储结构表示非零项
 
-![截屏2020-07-20 下午8.10.14](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-20 下午8.10.14.png)
+![截屏2020-07-20 下午8.10.14](Chapter 2.assets/截屏2020-07-20 下午8.10.14.png)
 
 ### 方法3：链表结构存储非零项
 
-![截屏2020-07-20 下午8.10.55](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-20 下午8.10.55.png)
+![截屏2020-07-20 下午8.10.55](Chapter 2.assets/截屏2020-07-20 下午8.10.55.png)
 
 ## 2. 线性表
 
