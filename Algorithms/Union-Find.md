@@ -1,3 +1,7 @@
+---
+
+---
+
 # Union-Find
 
 ## 1. Dynamic Connectivity
@@ -13,7 +17,7 @@
 
 ### 1.2 Dynamic Connectivity
 
-![截屏2020-07-16 下午11.05.04](https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.05.04.png)
+![截屏2020-07-16 下午11.05.04](Union-Find.assets/截屏2020-07-16 下午11.05.04.png)
 
 #### 1.2.1 Modeling the connections
 
@@ -25,7 +29,7 @@ We assume **"is connected to"** is an equivalence relation:
 
 **Connected components.** Maximal set of objects that are mutually connected.
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.10.03.png" alt="截屏2020-07-16 下午11.10.03" style="zoom:50%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.10.03.png" alt="截屏2020-07-16 下午11.10.03" style="zoom:50%;" />
 
 #### 1.2.2 Implementing the operations
 
@@ -35,11 +39,11 @@ We assume **"is connected to"** is an equivalence relation:
 
 with their union.
 
-![截屏2020-07-16 下午11.15.51](https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.15.51.png)
+![截屏2020-07-16 下午11.15.51](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.15.51.png)
 
 #### 1.2.3 Union-find data type (API)
 
-![截屏2020-07-16 下午11.16.45](https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.16.45.png)
+![截屏2020-07-16 下午11.16.45](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.16.45.png)
 
 #### 1.2.4 Dynamic-connectivity client
 
@@ -49,7 +53,7 @@ with their union.
   - –  read in pair of integers from standard input
   - –  if they are not yet connected, connect them and print out pair
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.20.28.png" alt="截屏2020-07-16 下午11.20.28" style="zoom:80%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.20.28.png" alt="截屏2020-07-16 下午11.20.28" style="zoom:80%;" />
 
 ### 1.3 Quick Find
 
@@ -61,7 +65,7 @@ with their union.
 
 If the two numbers are connected, put the same index to their id, like the picture, 0,5,6 have the same index of 0 because the are connected.
 
-![截屏2020-07-16 下午11.28.00](https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.28.00.png)
+![截屏2020-07-16 下午11.28.00](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.28.00.png)
 
 **Find.** 
 
@@ -71,7 +75,7 @@ Check if `p` and `q` have the same id.
 
 To merge components containing `p` and `q`, change all entries whose id equals `id[p]` to `id[q]`.
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-16%20%E4%B8%8B%E5%8D%8811.32.58.png" alt="截屏2020-07-16 下午11.32.58" style="zoom:50%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.32.58.png" alt="截屏2020-07-16 下午11.32.58" style="zoom:50%;" />
 
 **Java Implementation.**
 
@@ -100,7 +104,7 @@ public class QuickFindUF{
 
 **Cost model.**
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-17%20%E4%B8%8B%E5%8D%888.48.36.png" alt="截屏2020-07-17 下午8.48.36" style="zoom:50%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-17 下午8.48.36.png" alt="截屏2020-07-17 下午8.48.36" style="zoom:50%;" />
 
 **Union is too expensive.**
 
@@ -108,7 +112,7 @@ It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$
 
 ### 1.4 Quick Union
 
-**Data Structure**.![截屏2020-07-19 下午8.39.51](https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-19%20%E4%B8%8B%E5%8D%888.39.51.png)
+**Data Structure**.![截屏2020-07-19 下午8.39.51](/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.39.51.png)
 
 **Find.** 
 
@@ -118,7 +122,7 @@ Check if `p` and `q` have the same **root**.
 
 To merge components containing `p` and `q`, set the `id` of `p`'s root to the id of `q`'s root.
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-19%20%E4%B8%8B%E5%8D%888.41.18.png" alt="截屏2020-07-19 下午8.41.18" style="zoom:50%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.41.18.png" alt="截屏2020-07-19 下午8.41.18" style="zoom:50%;" />
 
 **Java Implementation.**
 
@@ -150,7 +154,7 @@ public class QuickUnionUF{
 
 **Cost model.**
 
-<img src="https://raw.githubusercontent.com/ClausYang/images/master/img/%E6%88%AA%E5%B1%8F2020-07-19%20%E4%B8%8B%E5%8D%888.46.00.png" alt="截屏2020-07-19 下午8.46.00" style="zoom:50%;" />
+<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-19 下午8.46.00.png" alt="截屏2020-07-19 下午8.46.00" style="zoom:50%;" />
 
 **Quick-find defect.**
 
