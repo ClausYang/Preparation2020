@@ -17,7 +17,7 @@
 
 ### 1.2 Dynamic Connectivity
 
-![截屏2020-07-16 下午11.05.04](Union-Find.assets/截屏2020-07-16 下午11.05.04.png)
+![截屏2020-07-16 下午11.05.04](Union-Find.assets/Dynamic_Connectivity.png)
 
 #### 1.2.1 Modeling the connections
 
