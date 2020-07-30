@@ -29,7 +29,7 @@ We assume **"is connected to"** is an equivalence relation:
 
 **Connected components.** Maximal set of objects that are mutually connected.
 
-<img src="/Users/yangchenghao/Library/Application Support/typora-user-images/截屏2020-07-16 下午11.10.03.png" alt="截屏2020-07-16 下午11.10.03" style="zoom:50%;" />
+<img src="Union-Find.assets/截屏2020-07-16 下午11.10.03.png" alt="截屏2020-07-16 下午11.10.03" style="zoom:50%;" />
 
 #### 1.2.2 Implementing the operations
 
