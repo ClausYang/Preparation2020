@@ -197,12 +197,12 @@ else                { id[j] = i; sz[i] += sz[j]; }
 
 **Pf.** When does depth of *x* increase?
 
-Increases by 1 when tree ![](http://latex.codecogs.com/svg.latex?\\T_1)containing *x* is merged into another tree ![](http://latex.codecogs.com/svg.latex?\\T_2).
+Increases by 1 when tree ![formula](https://render.githubusercontent.com/render/math?math=T_1)containing *x* is merged into another tree ![formula](https://render.githubusercontent.com/render/math?math=T_2).
 
-- The size of the tree containing *x* at least doubles since | ![](http://latex.codecogs.com/svg.latex?\\T_2)| ≥ |![](http://latex.codecogs.com/svg.latex?\\T_1)|.
+- The size of the tree containing *x* at least doubles since | ![formula](https://render.githubusercontent.com/render/math?math=T_2)| ≥ |![formula](https://render.githubusercontent.com/render/math?math=T_1)|.
 - Size of tree containing *x* can double at most lg *N* times. Why?
 
-When ![](http://latex.codecogs.com/svg.latex?\\T_1) add to ![](http://latex.codecogs.com/svg.latex?\\T_2), the size of ![](http://latex.codecogs.com/svg.latex?\\T_1) doubled and consider about *N* that means ![](http://latex.codecogs.com/svg.latex?\\N=2^x) 
+When ![formula](https://render.githubusercontent.com/render/math?math=T_1) add to ![formula](https://render.githubusercontent.com/render/math?math=T_2), the size of ![formula](https://render.githubusercontent.com/render/math?math=T_1) doubled and consider about *N* that means ![formula](https://render.githubusercontent.com/render/math?math=N = 2^x) 
 
 <img src="Union-Find.assets/截屏2020-08-18 下午8.32.49.png" alt="截屏2020-08-18 下午8.32.49" style="zoom:50%;" />
 
