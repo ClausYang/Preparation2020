@@ -17,7 +17,7 @@
 
 ### 1.2 Dynamic Connectivity
 
-![截屏2020-07-16 下午11.05.04](Union-Find.assets/Dynamic_Connectivity.png)
+<img src="Union-Find.assets/Dynamic_Connectivity.png" alt="截屏2020-07-16 下午11.05.04" style="zoom:67%;" />
 
 #### 1.2.1 Modeling the connections
 
@@ -41,7 +41,7 @@ Maximal set of objects that are mutually connected.
 
 with their union.
 
-![截屏2020-07-16 下午11.15.51](Union-Find.assets/截屏2020-07-16 下午11.15.51.png)
+<img src="Union-Find.assets/截屏2020-07-16 下午11.15.51.png" alt="截屏2020-07-16 下午11.15.51" style="zoom:67%;" />
 
 #### 1.2.3 Union-find data type (API)
 
@@ -67,7 +67,7 @@ with their union.
 
 If the two numbers are connected, put the same index to their id, like the picture, 0,5,6 have the same index of 0 because the are connected.
 
-![截屏2020-07-16 下午11.28.00](Union-Find.assets/截屏2020-07-16 下午11.28.00.png)
+<img src="Union-Find.assets/截屏2020-07-16 下午11.28.00.png" alt="截屏2020-07-16 下午11.28.00" style="zoom:50%;" />
 
 #### **1.3.2 Find.** 
 
@@ -114,7 +114,9 @@ It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$
 
 ### 1.4 Quick Union
 
-#### **1.4.1 Data Structure**.![截屏2020-07-19 下午8.39.51](Union-Find.assets/截屏2020-07-19 下午8.39.51.png)
+#### **1.4.1 Data Structure**.
+
+<img src="Union-Find.assets/截屏2020-07-19 下午8.39.51.png" alt="截屏2020-07-19 下午8.39.51" style="zoom:67%;" />
 
 #### **1.4.2 Find.** 
 
