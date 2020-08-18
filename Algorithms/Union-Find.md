@@ -45,7 +45,7 @@ with their union.
 
 #### 1.2.3 Union-find data type (API)
 
-![截屏2020-07-16 下午11.16.45](Union-Find.assets/截屏2020-07-16 下午11.16.45.png)
+<img src="Union-Find.assets/截屏2020-07-16 下午11.16.45.png" alt="截屏2020-07-16 下午11.16.45" style="zoom:67%;" />
 
 #### 1.2.4 Dynamic-connectivity client
 
@@ -69,17 +69,17 @@ If the two numbers are connected, put the same index to their id, like the pictu
 
 <img src="Union-Find.assets/截屏2020-07-16 下午11.28.00.png" alt="截屏2020-07-16 下午11.28.00" style="zoom:50%;" />
 
-#### **1.3.2 Find.** 
+#### 1.3.2 Find.
 
 Check if `p` and `q` have the same id.
 
-#### **1.3.3 Union. **
+#### 1.3.3 Union. 
 
 To merge components containing `p` and `q`, change all entries whose id equals `id[p]` to `id[q]`.
 
 <img src="Union-Find.assets/截屏2020-07-16 下午11.32.58.png" alt="截屏2020-07-16 下午11.32.58" style="zoom:50%;" />
 
-#### **1.3.4 Java Implementation.**
+#### 1.3.4 Java Implementation.
 
 ```java
 public class QuickFindUF{
@@ -104,31 +104,31 @@ public class QuickFindUF{
 }
 ```
 
-#### **1.3.5 Cost model.**
+#### 1.3.5 Cost model.
 
 <img src="Union-Find.assets/截屏2020-07-17 下午8.48.36.png" alt="截屏2020-07-17 下午8.48.36" style="zoom:50%;" />
 
-#### **1.3.6 Union is too expensive.**
+#### 1.3.6 Union is too expensive.
 
 It takes $N^2$ array accesses to process a sequence of $N$ union commands on $N$ objects.
 
 ### 1.4 Quick Union
 
-#### **1.4.1 Data Structure**.
+#### 1.4.1 Data Structure.
 
 <img src="Union-Find.assets/截屏2020-07-19 下午8.39.51.png" alt="截屏2020-07-19 下午8.39.51" style="zoom:67%;" />
 
-#### **1.4.2 Find.** 
+#### 1.4.2 Find. 
 
 Check if `p` and `q` have the same **root**.
 
-#### **1.4.3 Union. **
+#### **1.4.3 **Union**. **
 
 To merge components containing `p` and `q`, set the `id` of `p`'s root to the id of `q`'s root.
 
 <img src="Union-Find.assets/截屏2020-07-19 下午8.41.18.png" alt="截屏2020-07-19 下午8.41.18" style="zoom:50%;" />
 
-#### **1.4.4 Java Implementation.**
+#### 1.4.4 Java Implementation.
 
 ```java
 public class QuickUnionUF{
@@ -156,23 +156,23 @@ public class QuickUnionUF{
 }
 ```
 
-#### **1.4.5 Cost model.**
+#### 1.4.5 Cost model.
 
 <img src="Union-Find.assets/截屏2020-07-19 下午8.46.00.png" alt="截屏2020-07-19 下午8.46.00" style="zoom:50%;" />
 
-#### **1.4.6 Quick-find defect.**
+#### 1.4.6 Quick-find defect.
 
 - Union too expensive (*N* array accesses).
 - Trees are flat, but too expensive to keep them flat.
 
-#### **1.4.7 Quick-union defect.**
+#### 1.4.7 Quick-union defect.
 
 - Trees can get tall.
 - Find too expensive (could be *N* array accesses).
 
 ### 1.5 Improvements
 
-#### **1.5.1 Improvement 1: weighting**
+#### 1.5.1 Improvement 1: weighting
 
 - Modify quick-union to **avoid tall trees**.
 - Keep track of size of each tree (number of objects).
@@ -193,7 +193,7 @@ else                { id[j] = i; sz[i] += sz[j]; }
 
 #### 1.5.3 Weighted quick-union analysis
 
-**Proposition.** Depth of any node *x* is at most ![](http://latex.codecogs.com/svg.latex?\\lgN).
+**Proposition.** Depth of any node *x* is at most ![formula](https://render.githubusercontent.com/render/math?math=lgN).
 
 **Pf.** When does depth of *x* increase?
 
