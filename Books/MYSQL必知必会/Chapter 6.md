@@ -2,9 +2,11 @@
 
 条件过滤：WHERE
 
-`SELECT prod_name,prod_price
+```mysql
+SELECT prod_name,prod_price
 FROM products
-WHERE prod_price=2.50`
+WHERE prod_price=2.50
+```
 
 WHERE子句操作符
 
@@ -19,25 +21,35 @@ WHERE子句操作符
 
 检查单个值
 
-`SELECT prod_name,prod_price
+```mysql
+SELECT prod_name,prod_price
 FROM products
-WHERE prod_name='fuses'`
+WHERE prod_name='fuses`
+```
 
 不匹配检查：<>
 
-`SELECT prod_name,vend_id
+```mysql
+SELECT prod_name,vend_id
 FROM products
-WHERE vend_id<>1003;`
+WHERE vend_id<>1003
+```
 
 范围值检查：BETWEEN
 
-`SELECT prod_name,prod_price
+```mysql
+SELECT prod_name,prod_price
 FROM products
-WHERE prod_price BETWEEN 5 AND 10;`
+WHERE prod_price BETWEEN 5 AND 10;
+```
 
 空值检查
 
-`SELECT prod_name
+```mysql
+SELECT prod_name
 FROM products
-WHERE prod_price IS NULL;`
+WHERE prod_price IS NULL;
+```
+
+
 
